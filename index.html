@@ -18,7 +18,7 @@
     function onEachFeature(feature, layer) {
       // does this feature have a property named popupContent?
       if (feature.properties && feature.properties.title) {
-      	var popuphtml = "<strong>" + feature.properties.title + "</strong><ul><li>Notes: " + feature.properties.notes + "</li><li>Property 3: " + feature.properties.property3 + "</li></ul>";
+      	var popuphtml = "<strong>" + feature.properties.title;
         layer.bindPopup(popuphtml);
       }
     }
